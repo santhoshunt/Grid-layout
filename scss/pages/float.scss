@@ -1,0 +1,11 @@
+.float-page{
+    background: rgba(153, 153, 153, .3);
+}
+
+.heading-primary--main--float-page{
+    background-image: linear-gradient(to right,$dark-blue,$primary-color, $dark-blue);
+    background-clip:inherit;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+

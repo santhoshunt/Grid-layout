@@ -1,0 +1,20 @@
+{
+  "name": "grid-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "complie:scss": "node-sass scss/styles.scss -w css/grid.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santhoshunt/Grid-layout.git"
+  },
+  "author": "Santhosh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/santhoshunt/Grid-layout/issues"
+  },
+  "homepage": "https://github.com/santhoshunt/Grid-layout#readme"
+}

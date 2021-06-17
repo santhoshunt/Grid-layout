@@ -1,0 +1,6 @@
+@function calculate-width($occ, $total) {
+  @return calc(
+    (#{$occ} * (100% - (#{$total} - 1) * #{$gutter-horizontal}) / #{$total}) +
+      (#{$occ} - 1) * #{$gutter-horizontal}
+  );
+}

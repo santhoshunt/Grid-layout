@@ -1,0 +1,132 @@
+body {
+  line-height: 1.7;
+  color: #666;
+  padding: 3rem;
+  background: linear-gradient(
+    to right bottom,
+    hsla(194.05, 94.05%, 67.06%, 0.51) 0%,
+    hsla(194.11, 92.61%, 66.69%, 0.511) 8.1%,
+    hsla(194.28, 88.69%, 65.65%, 0.512) 15.5%,
+    hsla(194.56, 82.98%, 64.01%, 0.515) 22.5%,
+    hsla(194.96, 76.18%, 61.83%, 0.519) 29%,
+    hsla(195.51, 68.87%, 59.17%, 0.523) 35.3%,
+    hsla(196.22, 61.55%, 56.08%, 0.528) 41.2%,
+    hsla(197.15, 54.53%, 52.6%, 0.533) 47.1%,
+    hsla(198.34, 50.4%, 48.8%, 0.537) 52.9%,
+    hsla(199.87, 52.15%, 44.74%, 0.542) 58.8%,
+    hsla(201.8, 54.63%, 40.49%, 0.547) 64.7%,
+    hsla(204.17, 58.23%, 36.18%, 0.551) 71%,
+    hsla(206.91, 63.56%, 31.93%, 0.555) 77.5%,
+    hsla(209.58, 71.56%, 27.97%, 0.558) 84.5%,
+    hsla(211.14, 83.41%, 24.55%, 0.559) 91.9%,
+    hsla(210, 100%, 21.96%, 0.56) 100%
+  );
+  height: 100vh;
+}
+
+.home-page {
+  overflow-y: hidden;
+}
+
+// .home-page::-webkit-scrollbar {
+//   display: none;
+//}
+
+.heading-primary {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  &--main {
+    font-size: 6rem;
+    display: block;
+    letter-spacing: 1.9rem;
+
+    .letter-1 {
+      animation: out-in 1s 0s linear backwards;
+    }
+    .letter-2 {
+      animation: out-in 1s 0.3s linear backwards;
+    }
+    .letter-3 {
+      animation: out-in 1s 0.6s linear backwards;
+    }
+    .letter-4 {
+      animation: out-in 1s 0.9s linear backwards;
+    }
+    .letter-5 {
+      animation: out-in 1s 1.2s linear backwards;
+    }
+  }
+
+  &--sub {
+    font-size: 2.5rem;
+    display: block;
+    letter-spacing: 0.85rem;
+    animation: move-right 2s ease-in-out backwards;
+  }
+}
+
+.types-of-grid {
+  text-align: center;
+  padding: 5rem;
+  line-height: 3.1;
+
+  [class^="grid-using-"] {
+    text-transform: capitalize;
+    font-size: 3.3rem;
+    h3 {
+      font-weight: 200;
+    }
+
+    &[class$="float"] {
+      h3 {
+        animation: move-up 1s 0s ease-in-out backwards;
+      }
+    }
+    &[class$="flexbox"] {
+      h3 {
+        animation: move-up 1s 0.5s ease-in-out backwards;
+      }
+    }
+    &[class$="cssgrid"] {
+      h3 {
+        animation: move-up 1s 1s ease-in-out backwards;
+      }
+    }
+  }
+}
+
+.fa-exclamation-triangle {
+  color: orangered;
+}
+
+.inter-heading {
+  font-size: 4rem;
+  padding: 0rem 0rem 3rem 6rem;
+  margin: 0 auto;
+  color: $secondary-color;  
+}
+
+.grid-flex{
+  background: rgba(153, 153, 153, 0.13);
+}
+
+.code{
+  font-size:1.6rem;
+  font-family: monospace;
+  padding:6rem 0;
+  margin:0 auto;
+
+  .row{
+    [class^="col-"]{
+      background: transparent;
+      text-align: left;
+    }
+  }
+}
+
+.btn-container{
+  text-align:center;
+  padding:3rem 0rem;
+}
