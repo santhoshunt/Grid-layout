@@ -1,6 +1,14 @@
-@function calculate-width($occ, $total) {
-  @return calc(
-    (#{$occ} * (100% - (#{$total} - 1) * #{$gutter-horizontal}) / #{$total}) +
-      (#{$occ} - 1) * #{$gutter-horizontal}
-  );
+@function calculate-width($occ, $total, $device) {
+  @if ($device == tab) {
+    @return calc(
+      (
+          #{$occ} * (100% - (#{$total} - 1) * #{$gutter-horizontal-small}) / #{$total}
+        ) + (#{$occ} - 1) * #{$gutter-horizontal-small}
+    );
+  } @else {
+    @return calc(
+      (#{$occ} * (100% - (#{$total} - 1) * #{$gutter-horizontal}) / #{$total}) +
+        (#{$occ} - 1) * #{$gutter-horizontal}
+    );
+  }
 }

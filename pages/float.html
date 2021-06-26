@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <link rel="shortcut icon" href="../img/border-all-solid.svg">
-    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body class="float-page">
@@ -80,159 +80,9 @@
 
     </main>
 
-    <div class="code">
-        <div class="row">
-            <div class="col-1-of-2">
-                <h3 class="tertiary-heading">HTML CODE</h3>
-                <pre>
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-1-of-2&quot;&gt;col 1 of 2&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-2&quot;&gt;col 1 of 2&lt;/div&gt;
-&lt;/div&gt;
-    
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-1-of-3&quot;&gt;col 1 of 3&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-3&quot;&gt;col 1 of 3&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-3&quot;&gt;col 1 of 3&lt;/div&gt;
-&lt;/div&gt;
-    
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-1-of-3&quot;&gt;col 1 of 3&lt;/div&gt;
-  &lt;div class=&quot;col-2-of-3&quot;&gt;col 2 of 3&lt;/div&gt;
-&lt;/div&gt;
-    
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-1-of-4&quot;&gt;col 1 of 4&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-4&quot;&gt;col 1 of 4&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-4&quot;&gt;col 1 of 4&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-4&quot;&gt;col 1 of 4&lt;/div&gt;
-&lt;/div&gt;
-    
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-1-of-4&quot;&gt;col 1 of 4&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-4&quot;&gt;col 1 of 4&lt;/div&gt;
-  &lt;div class=&quot;col-2-of-4&quot;&gt;col 2 of 4&lt;/div&gt;
-&lt;/div&gt;
-    
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-1-of-4&quot;&gt;col 1 of 4&lt;/div&gt;
-  &lt;div class=&quot;col-3-of-4&quot;&gt;col 3 of 4&lt;/div&gt;
-&lt;/div&gt;
-    
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-1-of-5&quot;&gt;col 1 of 5&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-5&quot;&gt;col 1 of 5&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-5&quot;&gt;col 1 of 5&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-5&quot;&gt;col 1 of 5&lt;/div&gt;
-  &lt;div class=&quot;col-1-of-5&quot;&gt;col 1 of 5&lt;/div&gt;
-&lt;/div&gt;
-    
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-2-of-5&quot;&gt;col 2 of 5&lt;/div&gt;
-  &lt;div class=&quot;col-3-of-5&quot;&gt;col 3 of 5&lt;/div&gt;
-&lt;/div&gt;
-    
-&lt;div class=&quot;row&quot;&gt;
-  &lt;div class=&quot;col-1-of-5&quot;&gt;col 1 of 5&lt;/div&gt;
-  &lt;div class=&quot;col-4-of-5&quot;&gt;col 4 of 5&lt;/div&gt;
-&lt;/div&gt;
-        </pre>
-            </div>
-            <div class="col-1-of-2">
-                <h3 class="tertiary-heading">CSS CODE</h3>
-                <pre>
-.row {
-max-width: 114rem;
-margin: 0 auto;
-font-size: 1.6rem;
-}
-
-.row:not(:last-child) {
-margin-bottom: 8rem;
-}
-
-.row::after {
-content: "";
-clear: both;
-display: table;
-}
-
-.row [class^="col-"] {
-text-align: center;
-float: left;
-background-color: rgba(0, 195, 255, 0.568);
-}
-
-.row [class^="col-"]:not(:last-child) {
-margin-right: 6rem;
-}
-
-.row .col-1-of-2 {
-width: calc(
-    (1 * (100% - (2 - 1) * 6rem) / 2) + (1 - 1) * 6rem 
-);
-}
-.row .col-1-of-3 {
-width: calc(
-    (1 * (100% - (3 - 1) * 6rem) / 3) + (1 - 1) * 6rem 
-);
-}
-
-.row .col-2-of-3 {
-width: calc(
-    (2 * (100% - (3 - 1) * 6rem) / 3) + (2 - 1) * 6rem 
-);
-}
-
-.row .col-1-of-4 {
-width: calc(
-    (1 * (100% - (4 - 1) * 6rem) / 4) + (1 - 1) * 6rem 
-);
-}
-
-.row .col-2-of-4 {
-width: calc(
-    (2 * (100% - (4 - 1) * 6rem) / 4) + (2 - 1) * 6rem 
-);
-}
-
-.row .col-3-of-4 {
-width: calc(
-    (3 * (100% - (4 - 1) * 6rem) / 4) + (3 - 1) * 6rem 
-);
-}
-
-.row .col-1-of-5 {
-width: calc(
-    (1 * (100% - (5 - 1) * 6rem) / 5) + (1 - 1) * 6rem 
-);
-}
-
-.row .col-2-of-5 {
-width: calc(
-    (2 * (100% - (5 - 1) * 6rem) / 5) + (2 - 1) * 6rem 
-);
-}
-
-.row .col-3-of-5 {
-width: calc(
-    (3 * (100% - (5 - 1) * 6rem) / 5) + (3 - 1) * 6rem 
-);
-}
-
-.row .col-4-of-5 {
-width: calc(
-    (4 * (100% - (5 - 1) * 6rem) / 5) + (4 - 1) * 6rem 
-);
-}
-            </pre>
-            </div>
-        </div>
-
-    </div>
 
     <div class="btn-container">
-        <a href="../index.html" class="btn btn-anim">Back to home</a>
+        <a href="../index.html" class="btn btn-anim back-to-home">Back to home</a>
     </div>
 
 
